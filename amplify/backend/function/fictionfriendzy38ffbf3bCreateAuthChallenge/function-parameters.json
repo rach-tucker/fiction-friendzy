@@ -1,0 +1,16 @@
+{
+  "trigger": true,
+  "modules": [
+    "captcha-create-challenge"
+  ],
+  "parentResource": "fictionfriendzy38ffbf3b",
+  "functionName": "fictionfriendzy38ffbf3bCreateAuthChallenge",
+  "resourceName": "fictionfriendzy38ffbf3bCreateAuthChallenge",
+  "parentStack": "auth",
+  "triggerEnvs": "[]",
+  "triggerDir": "C:\\snapshot\\repo\\build\\node_modules\\@aws-amplify\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\CreateAuthChallenge",
+  "triggerTemplate": "CreateAuthChallenge.json.ejs",
+  "triggerEventPath": "CreateAuthChallenge.event.json",
+  "roleName": "fictionfriendzy38ffbf3bCreateAuthChallenge",
+  "skipEdit": true
+}
