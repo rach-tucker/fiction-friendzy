@@ -1,4 +1,37 @@
 {
+  "api": {
+    "fictionfriendzy": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "fictionfriendzy38ffbf3b"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authfictionfriendzy38ffbf3b"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "fictionfriendzy38ffbf3b": {
       "customAuth": true,
@@ -92,6 +125,22 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_fictionfriendzy38ffbf3bCreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bCreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bCreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bCreateAuthChallenge"
+        }
+      ]
+    },
     "AMPLIFY_function_fictionfriendzy38ffbf3bCustomMessage_EMAILMESSAGE": {
       "usedBy": [
         {
@@ -116,6 +165,38 @@
         }
       ]
     },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bCustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bCustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bDefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bDefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bDefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bDefineAuthChallenge"
+        }
+      ]
+    },
     "AMPLIFY_function_fictionfriendzy38ffbf3bVerifyAuthChallengeResponse_RECAPTCHASECRET": {
       "usedBy": [
         {
@@ -123,6 +204,23 @@
           "resourceName": "fictionfriendzy38ffbf3bVerifyAuthChallengeResponse"
         }
       ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bVerifyAuthChallengeResponse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bVerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_fictionfriendzy38ffbf3bVerifyAuthChallengeResponse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "fictionfriendzy38ffbf3bVerifyAuthChallengeResponse"
+        }
+      ]
     }
-  }
+  },
+  "storage": {}
 }

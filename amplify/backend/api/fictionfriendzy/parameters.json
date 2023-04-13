@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "fictionfriendzy",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authfictionfriendzy38ffbf3b",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

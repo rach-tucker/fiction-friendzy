@@ -1,0 +1,12 @@
+projects:
+  fictionfriendzy:
+    schemaPath: app/graphql/schema.json
+    includes:
+      - lib/graphql/**/*.tsx
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: lib/graphql
+        docsFilePath: lib/graphql

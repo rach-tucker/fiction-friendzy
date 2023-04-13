@@ -5,7 +5,7 @@ export default function MixMatchPage() {
   return (
     <div>
       <h1>Home Page</h1>
-      <div>
+      <div className='prompt'>
         <Prompt/>
       </div> 
   </div>

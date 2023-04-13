@@ -9,23 +9,37 @@
       "UnauthRoleName": "amplify-fictionfriendzy-dev-132147-unauthRole",
       "StackName": "amplify-fictionfriendzy-dev-132147",
       "StackId": "arn:aws:cloudformation:us-west-1:228660212855:stack/amplify-fictionfriendzy-dev-132147/b92ec450-d895-11ed-907f-06dfb2b187af",
-      "AmplifyAppId": "d30oqnrcgqo2k9"
+      "AmplifyAppId": "d30oqnrcgqo2k9",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-fictionfriendzy-dev-132147-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
         "fictionfriendzy38ffbf3b": {}
       },
       "function": {
-        "fictionfriendzy38ffbf3bDefineAuthChallenge": {},
-        "fictionfriendzy38ffbf3bCreateAuthChallenge": {},
+        "fictionfriendzy38ffbf3bDefineAuthChallenge": {
+          "deploymentBucketName": "amplify-fictionfriendzy-dev-132147-deployment",
+          "s3Key": "amplify-builds/fictionfriendzy38ffbf3bDefineAuthChallenge-69314f78617a68734f46-build.zip"
+        },
+        "fictionfriendzy38ffbf3bCreateAuthChallenge": {
+          "deploymentBucketName": "amplify-fictionfriendzy-dev-132147-deployment",
+          "s3Key": "amplify-builds/fictionfriendzy38ffbf3bCreateAuthChallenge-4e387258696d722b5467-build.zip"
+        },
         "fictionfriendzy38ffbf3bVerifyAuthChallengeResponse": {
-          "RECAPTCHASECRET": "6Le8BGIlAAAAAMpYXHsHWuW38sHHZ4bkrlit6RdG"
+          "RECAPTCHASECRET": "6Le8BGIlAAAAAMpYXHsHWuW38sHHZ4bkrlit6RdG",
+          "deploymentBucketName": "amplify-fictionfriendzy-dev-132147-deployment",
+          "s3Key": "amplify-builds/fictionfriendzy38ffbf3bVerifyAuthChallengeResponse-6f6c4333556439436842-build.zip"
         },
         "fictionfriendzy38ffbf3bCustomMessage": {
           "REDIRECTURL": "http://localhost:3000/",
           "EMAILSUBJECT": "Confirm your email for Fiction Friendzy!",
-          "EMAILMESSAGE": "Click on the link to confirm your email:"
+          "EMAILMESSAGE": "Click on the link to confirm your email:",
+          "deploymentBucketName": "amplify-fictionfriendzy-dev-132147-deployment",
+          "s3Key": "amplify-builds/fictionfriendzy38ffbf3bCustomMessage-52433232762b5a4b7543-build.zip"
         }
+      },
+      "api": {
+        "fictionfriendzy": {}
       }
     }
   }
