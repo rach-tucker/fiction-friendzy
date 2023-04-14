@@ -1,5 +1,11 @@
 import Prompt from './prompt/route';
+import SignUp from '../lib/signup';
 import './page.module.css';
+import { Amplify } from 'aws-amplify';
+import awsmobile from './aws-exports';
+
+Amplify.configure(awsmobile);
+
 
 export default function MixMatchPage() {
   return (
@@ -8,6 +14,9 @@ export default function MixMatchPage() {
       <div className='prompt'>
         <Prompt/>
       </div> 
+      <div className='signup'>
+        <SignUp/>
+      </div>
   </div>
   )
 }
